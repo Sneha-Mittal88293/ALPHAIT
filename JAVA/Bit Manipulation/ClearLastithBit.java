@@ -6,6 +6,7 @@ class ClearLastithBit{
         int n  = sc.nextInt();
         int bitmask = ((~0)<<2);
         System.out.print(n & bitmask);
+        
 
         // ith time 1 = (~0)<<i ya fr (-1<<i)
     }
