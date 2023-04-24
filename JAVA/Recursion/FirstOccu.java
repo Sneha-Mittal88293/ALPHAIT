@@ -11,7 +11,7 @@ class FirstOccu{
        
    }
     public static void main(String args[]){
-        int arr[] = {4,6,8,9.2};
+        int arr[] = {4,6,8,9,2};
         System.out.print(firstOccurence(arr,2,0));
     }
 }
