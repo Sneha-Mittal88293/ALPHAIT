@@ -8,18 +8,13 @@ class QuickSort{
         if(si >= ei){
             return;
         }
-
         int pIdx = partition(arr , si , ei);
         quickSort(arr , si , pIdx-1);  //left
         quickSort(arr , pIdx+1 , ei);   //right
-
-
     }
     public static int partition(int arr[] , int si , int ei){
         int pivot = arr[ei];
         int i = si-1;  //to make place for element smaller than pivot
-        
-
         for(int j =si ; j <ei ; j++){
             if(arr[j] < pivot){
                 i++;
@@ -28,15 +23,12 @@ class QuickSort{
                 arr[i] = temp;
             }
         }
-
         //for pivot
         i++;
         int temp = pivot;
         arr[ei] = arr[i];
         arr[i] = temp;
         return i;  //here i the index of pivot
-
-
     }
      public static void main(String args[]){
         int arr[] = {1,4,2,3,6,1,7,3,9,5,7};
